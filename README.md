@@ -1,0 +1,1 @@
+# appsec-hardening-skill
