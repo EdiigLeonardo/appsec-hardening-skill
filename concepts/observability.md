@@ -1,7 +1,11 @@
-# Observability and Auditability
+# Observability and auditability
 
-Security-relevant actions must be attributable and reconstructable.
+Security-relevant actions must be detectable and attributable.
 
-Do not log secrets.
+Review logging for:
 
-Ensure meaningful detection for identity, authorization, privilege, destructive actions, and sensitive exports.
+identity events; authorization failures; privilege changes; sensitive exports; destructive actions; security configuration changes; anomalous use.
+
+Never log secrets or credentials.
+
+For important business actions, preserve an audit trail that supports reconstruction.

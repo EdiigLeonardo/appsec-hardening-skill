@@ -1,11 +1,9 @@
-# State and Workflow Integrity
+# State and workflow integrity
 
-Model allowed states and transitions.
+For each business workflow:
 
-Check:
-- skipped states
-- forged states
-- repeated transitions
-- self-approval
-- invalid transitions
-- irreversible actions
+identify allowed states; identify allowed transitions; identify actors allowed to transition; identify required preconditions; identify irreversible operations.
+
+Test:
+
+skipped states; repeated actions; reversed actions; self-approval; forged status; out-of-order actions; duplicate actions.

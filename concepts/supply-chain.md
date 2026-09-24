@@ -1,10 +1,7 @@
-# Supply Chain
+# Supply chain
 
-Review everything that may execute or affect artifacts:
-- dependencies
-- plugins
-- build actions
-- base images
-- package scripts
-- external scripts
-- artifact provenance
+Review:
+
+third-party libraries; build tools; plugins; images; packages; actions; templates; external scripts; package integrity; lockfiles; provenance.
+
+Assess what executes during build, install, test, and deploy.

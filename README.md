@@ -199,7 +199,7 @@ Run focused audits on specific security areas:
 ```
 appsec-hardening-skill/
 ├── manifest.json              # Skill metadata and core domain declarations
-├── SKILL.md                   # Primary execution engine and evaluation prompt
+├── SKILL.md                   # Compact workflow and selective reference routing
 ├── LICENSE                    # MIT License
 ├── README.md                  # Project documentation & user guide
 ├── concepts/                  # 14 Domain-specific security guidelines
@@ -225,6 +225,7 @@ appsec-hardening-skill/
 │   ├── secure-by-default.md
 │   └── zero-trust.md
 ├── templates/                 # Standardized reporting & audit templates
+│   ├── developer-ticket.md    # Confirmed HIGH/CRITICAL remediation ticket
 │   ├── finding.md             # Single vulnerability / finding format
 │   ├── report.md              # Full audit report structure
 │   └── security-model.md      # Threat model & invariant specification template
@@ -235,6 +236,12 @@ appsec-hardening-skill/
 ```
 
 ---
+
+## Context efficiency
+
+`SKILL.md` contains the shared workflow and routes to existing references. Full reviews cover all 14 domains, including the 20 original review topics; focused and diff reviews load only affected domains and expand when evidence implicates shared controls. Templates are read when their output is needed. README, examples, paradigms, and adapters are not loaded by default.
+
+Reports retain evidence, confidence, severity, coverage, and manual-review gaps. Findings and developer tickets cross-reference evidence rather than repeating it. Token savings depend on the tokenizer, review scope, and inspected code; shorter instructions do not replace investigation.
 
 ## Reporting & Templates
 

@@ -1,13 +1,7 @@
-# Content and File Handling
-
-Treat files and rich content as hostile.
+# Content and file handling
 
 Review:
-- size
-- type
-- active content
-- parser safety
-- path usage
-- metadata
-- decompression
-- storage authorization
+
+file type; content type; parser; size; compression ratio; metadata; filename/path; execution capability; active content; storage permissions; download authorization.
+
+Treat uploaded content as hostile.

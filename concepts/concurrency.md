@@ -1,13 +1,13 @@
-# Concurrency and Atomicity
+# Concurrency and atomicity
 
-Find read-check-write flows.
+Identify flows with:
 
-Review:
-- races
-- replay
-- duplicate execution
-- double spend
-- quota bypass
-- overbooking
+`read -> validate -> mutate`
 
-Use atomicity, idempotency, locking, uniqueness, or versioning where appropriate.
+Review for:
+
+race conditions; double spending; duplicate redemption; overbooking; quota bypass; replay; duplicate jobs.
+
+Use appropriate concepts:
+
+atomic operations; transactions; uniqueness; locking; optimistic concurrency; idempotency.

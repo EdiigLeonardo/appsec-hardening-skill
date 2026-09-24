@@ -1,6 +1,21 @@
-# Secrets
+# Secrets and key material
 
-Review generation, distribution, storage, access, rotation, revocation, build exposure, logging, and client exposure.
+Limit secrets to the minimum trusted principals and required lifetime.
 
-Invariant:
-Secrets must only be available to the minimum trusted principals for the minimum required lifetime.
+Review:
+
+creation; storage; distribution; access; rotation; revocation; logging; build-time exposure; client exposure.
+
+Rule:
+
+A secret available to an untrusted client is not a secret.
+
+Prefer short-lived credentials and scoped capabilities.
+
+## Cryptographic use
+
+Review:
+
+purpose of cryptography; key management; random generation; nonce/IV handling; signing vs encryption; verification; expiration; algorithm agility.
+
+Do not invent custom cryptographic protocols.

@@ -1,13 +1,9 @@
-# Input and Interpretation
+# Input and interpretation
 
-Treat all external and previously persisted user-controlled data as untrusted.
+All external or previously persisted attacker-controlled data is untrusted.
 
-Review transitions from data into:
-- queries
-- commands
-- markup
-- templates
-- paths
-- URLs
-- deserialization
-- parsers
+Review:
+
+type validation; range validation; structural validation; canonicalization; parser behavior; command construction; query construction; template rendering; deserialization; path handling; URL handling.
+
+Look for transitions where data becomes code, query syntax, path syntax, markup, commands, or control flow.
