@@ -1,0 +1,23 @@
+{
+  "name": "appsec-hardening",
+  "version": "2.0.0",
+  "architecture": "technology-agnostic",
+  "description": "Concept- and paradigm-driven defensive AppSec hardening skill.",
+  "default_mode": "full",
+  "core_domains": [
+    "identity",
+    "authorization",
+    "trust-boundaries",
+    "input-interpretation",
+    "state-integrity",
+    "concurrency",
+    "secrets",
+    "external-interactions",
+    "content-files",
+    "availability-abuse",
+    "data-lifecycle",
+    "observability",
+    "supply-chain",
+    "delivery-pipeline"
+  ]
+}
